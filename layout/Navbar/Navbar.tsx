@@ -27,11 +27,11 @@ const Navbar = (props: Props) => {
               Stake
             </a>
           </Link>
-          <Link href="/whitepaper">
+          {/* <Link href="/whitepaper">
             <a className={style.route} onClick={() => setOpen(!open)}>
               Whitepaper
             </a>
-          </Link>
+          </Link> */}
         </div>
         <Ham open={open} setOpen={setOpen} />
       </div>
