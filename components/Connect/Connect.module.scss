@@ -1,0 +1,42 @@
+@import '/styles/variables';
+
+.container{
+    margin-top: 80px;
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+}
+
+.btn{
+    background:linear-gradient(104.04deg,$red-black,$red-0);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border: 0;
+    font-size: 14px;
+    height: 40px;
+    line-height: 20px;
+    padding: 0 16px;
+    width: 200px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:hover{
+        background:$red-1;
+    }
+}
+
+.chainId{
+    font-size: 40px;
+    transition: all 1s;
+
+    &:hover{
+        transition: all 1s;
+        color: $red-black;
+        text-shadow: 0 0 12px $red-0;
+        user-select: none;
+    }
+}

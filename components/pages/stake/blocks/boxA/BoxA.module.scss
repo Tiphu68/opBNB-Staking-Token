@@ -1,0 +1,230 @@
+@import '/styles/variables';
+
+.title{
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inWallet, .stake{
+    display: flex;
+    flex-direction: column;
+}
+
+.stakedTitle, .inWalletTitle, .rewardTitle{
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.rewardContainer{
+    width: 100%;
+    height: 55px;
+    border-radius: 7px;
+    border: 0;
+    color: #fff;
+    padding: 0 20px;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background:linear-gradient(104.04deg,$black-2,$red-black);
+}
+
+.rewardInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.rewardBalance{
+
+    span{
+        font-size: 15px;
+        color: $red-0;
+    }
+}
+
+.claim{
+    background-color: $black-2;
+    color:$red-0;
+    letter-spacing: 1px;
+    font-weight: 500;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+    height: 30px;
+    line-height: 20px;
+    padding: 0 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 5px $red-black;
+
+    &:hover{
+        background:$black-1;
+    }
+
+    &:disabled{
+        opacity: 0.7;
+        pointer-events: none;
+    }
+}
+
+.btnContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.stakeBTN{
+    background:linear-gradient(104.04deg,$black-2,$red-black);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 20px;
+    padding: 0 16px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 5px $red-black;
+
+    &:hover{
+        background:$black-1;
+    }
+}
+
+.unstakeBTN{
+    position: relative;
+    background:linear-gradient(104.04deg,$black-2,$red-black);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 20px;
+    padding: 0 16px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 5px $red-black;
+
+    &:hover{
+        background:$black-1;
+    }
+}
+
+@media (max-width:450px){
+
+    .staked{
+        min-width: 100px;
+    }
+    .info{
+        gap: 10px;
+    }
+
+    .stakedTitle, .inWalletTitle, .rewardTitle{
+        font-size: 9px;
+    }
+        
+    .stakedBalance, .inWalletBalance{
+        font-size: 15px;
+    }
+
+    .rewardBalance{
+        font-size: 17px;
+
+        span{
+            font-size: 11px;
+        }
+    }
+
+    .rewardContainer{
+        padding: 0 8px;
+    }
+
+}
+
+//MODAL
+
+.modalContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    height: 100%;
+}
+
+.titleModal{
+    font-size: 27px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: $black-red;
+    user-select: none;
+}
+
+.modalStakeBTN{
+    background:linear-gradient(104.04deg,$black-2,$red-black);
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 20px;
+    padding: 0 16px;
+    width: 70%;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 5px $red-black;
+
+    &:hover{
+        background:$black-1;
+    }
+}
+
+.input{
+    width: 70%;
+    height: 55px;
+    border-radius: 7px;
+    border: 0;
+    color: #fff;
+    padding: 0 20px;
+    font-size: 20px;
+
+    background:linear-gradient(104.04deg,$black-2,$red-black);
+    box-shadow: 0 0 5px $red-black;
+
+    &:focus{
+        border: solid 2px $red-0;
+        box-shadow: 0 0 12px $red-0;
+        outline: none;
+      }
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.input[type=number] {
+  appearance: textfield;
+}
+
+.input::placeholder{
+    text-align: center;
+    color: #fff;
+}

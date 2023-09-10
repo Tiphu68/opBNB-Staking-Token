@@ -1,0 +1,19 @@
+@import '/styles/variables';
+
+.title{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: calc(100% - 35px);
+
+    font-size: 75px;
+    font-weight: 600;
+    color: $black-1;
+}

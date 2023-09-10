@@ -1,0 +1,45 @@
+@import '/styles/variables';
+
+.title{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 7px;
+    color: $red-0;
+}
+
+.value{
+    font-size: 21px;
+    font-weight: 300;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img{
+    margin-left: 10px;
+    cursor: pointer;
+    filter: invert(100%);
+    position: relative;
+}
+
+
+.copied{
+    font-size: 12px;
+    position: absolute;
+    opacity: 1;
+    transition: all 0.3s;
+    color: black;
+}
+
+.copiedFalse{
+    font-size: 12px;
+    transition: all 0.2s;
+    position: absolute;
+    opacity: 0;
+    color: black;
+}
+
+@media (max-width:620px){
+}

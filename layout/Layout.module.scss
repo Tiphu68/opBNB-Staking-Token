@@ -1,0 +1,22 @@
+@import "/styles/variables";
+
+.container {
+  width: 93vw;
+  min-height: 94vh;
+  background-color: #08091b;
+  border-radius: 30px;
+  padding: 30px 55px;
+}
+
+.childrenContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1450px) {
+  .container {
+    max-height: none;
+    padding: 30px 55px;
+  }
+}

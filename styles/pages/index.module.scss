@@ -1,0 +1,29 @@
+@import '/styles/variables';
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height:80vh;
+}
+
+.imgContainer{
+    position: relative;
+    width: 916px;
+    min-height: 811px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0.82;
+
+    background: radial-gradient(closest-side,#2b2b2b 0%, transparent 65%);
+
+}
+
+@media (max-width:1450px){
+    .imgContainer{
+        display: none;
+    }
+}

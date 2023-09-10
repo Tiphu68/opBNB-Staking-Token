@@ -1,0 +1,64 @@
+@import '/styles/variables';
+
+.container{
+    padding: 80px;
+}
+
+.mainTitle{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: $red-0;
+}
+
+.mainDescription{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+
+.subContainer{
+    width: 100%;
+    margin: auto;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: $red-0;
+}
+
+.description{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+@media (max-width:900px){
+    .container{
+        padding: 80px 0px;
+    }
+
+}
+
+@media (max-width:900px){
+         
+    .container{
+        padding-bottom: 0px;
+    }
+
+    .mainTitle{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    
+    .mainDescription{
+        font-size: 18px;
+    }
+    
+    .description{
+        font-size: 18px;
+        margin-bottom: 35px;
+    }
+}

@@ -1,0 +1,56 @@
+@import '/styles/variables';
+
+@mixin Ham{
+    top: -10px;
+    right: -30px;
+    position: absolute;
+    z-index: 10;
+    z-index: 100;
+    width: 35px;
+    cursor: pointer;
+}
+
+@mixin bar{
+    background: $red-0;
+    content: "";
+    display: block;
+    height: 3px;
+    border-radius: 3px;
+    margin: 7px 0;
+    transition: 0.5s;
+}
+
+.center {
+  @include Ham();
+}
+
+.center:before,
+.center:after,
+.center div {
+  @include bar();
+}
+
+.centerActive{
+    @include Ham();
+}
+
+.centerActive:before {
+  @include bar();
+  transform: translateY(10px) rotate(135deg);
+}
+
+.centerActive:after {
+  @include bar();
+  transform: translateY(-10px) rotate(-135deg);
+}
+
+.centerActive div {
+  @include bar();
+  transform: scale(0);
+}
+
+@media (min-width:700px){
+    .center, .centerActive{
+        display: none;
+    }
+}
